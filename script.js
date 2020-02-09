@@ -7,7 +7,7 @@ const COMMANDS = {
   skills:
     '<span class="code">Languages:</span> Python, HTML, CSS, JavaScript<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> React.js, Vue.js, Django',
   education:
-    "St. Dominic's Academy, India<br>Higher Secondary — Computer Science",
+    "Kendriya Vidyalaya , India<br> PSG College of Technology — Computer Science",
   resume: "<a href='./resume.pdf' class='success link'>resume.pdf</a>",
   experience: "No Experience😥",
   contact:
