@@ -49,7 +49,6 @@ const key = function keyEvent(e) {
   }
 
   if (e.key === "Enter") {
-    userInput.innerHTML = document.getElementById("dummyKeyboard");
     execute(input);
     userInput.innerHTML = "";
     return;
