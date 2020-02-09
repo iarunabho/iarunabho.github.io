@@ -22,9 +22,6 @@ const app = () => {
   console.log("Application loaded");
 };
 
-const save_vale = function() {
-  x = document.getElementById("dummyKeyboard").focus();
-};
 const execute = function executeCommand(input) {
   let output;
   input = input.toLowerCase();
@@ -44,6 +41,7 @@ const execute = function executeCommand(input) {
 };
 
 const key = function keyEvent(e) {
+  coms;
   const input = userInput.innerHTML;
 
   if (BLACKLISTED_KEY_CODES.includes(e.keyCode)) {
