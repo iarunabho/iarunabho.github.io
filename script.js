@@ -18,9 +18,8 @@ let userInput, terminalOutput;
 const app = () => {
   userInput = document.getElementById("userInput");
   terminalOutput = document.getElementById("terminalOutput");
-  var input = document.getElementById("dummyKeyboard");
-  input.focus();
-
+  var x = document.getElementById("userInput").focus();
+  console.log(x.value);
   console.log("Application loaded");
 };
 
