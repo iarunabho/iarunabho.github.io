@@ -18,7 +18,7 @@ let userInput, terminalOutput;
 const app = () => {
   userInput = document.getElementById("userInput");
   terminalOutput = document.getElementById("terminalOutput");
-  var x = document.getElementById("userInput").focus();
+  document.getElementById("dummyKeyboard").focus();
   console.log("Application loaded");
 };
 
@@ -47,7 +47,7 @@ const key = function keyEvent(e) {
     return;
   }
 
-  if ((e.key === "Enter") | 13) {
+  if (e.key === "13") {
     execute(input);
     userInput.innerHTML = "";
     return;
