@@ -19,7 +19,6 @@ const app = () => {
   userInput = document.getElementById("userInput");
   terminalOutput = document.getElementById("terminalOutput");
   var x = document.getElementById("userInput").focus();
-  console.log(x.value);
   console.log("Application loaded");
 };
 
@@ -48,7 +47,7 @@ const key = function keyEvent(e) {
     return;
   }
 
-  if (e.key === "Enter") {
+  if ((e.key === "Enter") | 13) {
     execute(input);
     userInput.innerHTML = "";
     return;
