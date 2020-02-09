@@ -22,11 +22,9 @@ const app = () => {
   console.log("Application loaded");
 };
 
-const save_vale = function ()
-{
-  x = document.getElementById('dummyKeyboard').focus();
-  userInput = do
-}
+const save_vale = function() {
+  x = document.getElementById("dummyKeyboard").focus();
+};
 const execute = function executeCommand(input) {
   let output;
   input = input.toLowerCase();
