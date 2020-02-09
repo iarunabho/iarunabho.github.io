@@ -47,7 +47,7 @@ const key = function keyEvent(e) {
     return;
   }
 
-  if (e.key === "13") {
+  if (e.key === "Enter") {
     execute(input);
     userInput.innerHTML = "";
     return;
