@@ -22,6 +22,11 @@ const app = () => {
   console.log("Application loaded");
 };
 
+const save_vale = function ()
+{
+  x = document.getElementById('dummyKeyboard').focus();
+  userInput = do
+}
 const execute = function executeCommand(input) {
   let output;
   input = input.toLowerCase();
@@ -48,6 +53,7 @@ const key = function keyEvent(e) {
   }
 
   if (e.key === "Enter") {
+    userInput.innerHTML = document.getElementById("dummyKeyboard");
     execute(input);
     userInput.innerHTML = "";
     return;
