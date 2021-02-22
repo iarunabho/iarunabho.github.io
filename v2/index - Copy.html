@@ -1,23 +1,11 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XM2EKJGXT9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-XM2EKJGXT9');
-  </script>
   <meta charset="UTF-8">
   <!--[if IE]><![endif]-->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Arunabho Majumder🚀 - Personal Website</title>
+  <title>Arunabho Majumder - Personal Website</title>
   <link rel="shortcut icon" href="{{site.logo}}" hreflang="en-us">
   <meta property="og:title" content="{{site.title}}" />
   <meta property="og:description" content="{{site.description}}" />
@@ -30,15 +18,15 @@
   <meta property="og:image:type" content="image/jpg" />
   <meta property="og:locale" content="en_US">
   <meta name="description" content="{{site.description}}">
-  <meta name="keywords" content="design, development, web, arunabho05, arunabho, majumder, javascript, psg tech">
+  <meta name="keywords" content="design, development, web, bchiang7, brittany, chiang, javascript, northeastern">
   <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
   <meta itemprop="name" content="{{site.title}}">
   <meta itemprop="description" content="{{site.description}}">
   <meta itemprop="image" content="{{site.cover}}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{site.url}}">
-  <meta name="twitter:site" content="@iarunabho">
-  <meta name="twitter:creator" content="@iarunabho">
+  <meta name="twitter:site" content="@bchiang7">
+  <meta name="twitter:creator" content="@bchiang7">
   <meta name="twitter:title" content="{{site.title}}">
   <meta name="twitter:description" content="{{site.description}}">
   <meta name="twitter:image:src" content="{{site.cover}}">
@@ -130,7 +118,8 @@
             class="dot-label">Intro</span> </a> </li>
       <li class="dot-container"> <a href="#about-section" data-number="1" class="is-selected"> <span class="dot"></span>
           <span class="dot-label">About</span> </a> </li>
-
+      <li class="dot-container"> <a href="#services-section" data-number="2" class=""> <span class="dot"></span> <span
+            class="dot-label">What I Do</span> </a> </li>
       <li class="dot-container"> <a href="#skills-section" data-number="3" class=""> <span class="dot"></span> <span
             class="dot-label">Skills</span> </a> </li>
       <li class="dot-container"> <a href="#experience-section" data-number="4" class=""> <span class="dot"></span> <span
@@ -148,8 +137,14 @@
   </div>
 
   <div id="overlay" class="overlay">
-    <div class="logo"><img class="logo-img" src="img/logo-white.png" alt="logo"><span>Arunabho Majumder</span></div>
-
+    <div class="logo"><img class="logo-img" src="img/logo-white.png" alt="logo"><span>Brittany Chiang</span></div>
+    <nav class="overlay-menu">
+      <ul class="menu-container">
+        {% for item in site.data.navigation %}
+        <li class="menu-item"><a href="#{{item.section}}-section">{{item.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
   </div>
 
   <div id="skroll-body">
@@ -161,7 +156,7 @@
           <div class="intro-body" data-anchor-target="#intro-section" data-top="opacity: 1;"
             data-top-bottom="opacity: 0;">
             <div class="intro-content">
-              <h1 class="heading" data-content="Arunabho Majumder"><span class="name">Arunabho Majumder</span></h1>
+              <h1 class="heading" data-content="Arunabho Majumder"><span class="name">Brittany Chiang</span></h1>
               <div class="action-wrapper">
                 <p class="subtext">
                   <a class="btn main-action">Software Engineer</a>
@@ -190,24 +185,25 @@
       <section id="about-section" class="section">
         <div class="section-wrapper">
           <div class="fade-in">
-            <h1 class="section-heading">Hey, I'm Arunabho😊.</h1>
-            <h3 class="section-subheading">I'm Astute, calculating🧮, and attentive to specific business requirements &
-              have a successful history of identifying patterns, making interpretations, and producing reports📃. Skills
-              setting up databases and other frameworks, managing systems, and aligning procedures with business
-              needs.🚀</h3>
+            <h1 class="section-heading">Hey, I'm Arunabho.</h1>
+            <h3 class="section-subheading">I'm a design-minded, detail oriented software engineer passionate about
+              combining beautiful code with beautiful design.</h3>
             <span class="divider"></span>
             <div class="about-wrapper">
               <img class="headshot" src="img/headshot.png" alt="headshot">
               <div class="about-text-wrapper">
-                <p class="about-text"><strong>I'm right now freelancing as a software developer</strong> at data245. I
-                  work on webapps which provide interactive access to users and thereby simplifying the app acceptance.
-                </p>
+                <p class="about-text"><strong>I'm a fourth year student at Northeastern University</strong> in Boston
+                  studying computer science and interaction design. I have experience developing and designing software
+                  for the web, from simple landing pages to progressive web applications. I strive to create software
+                  that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user
+                  experiences.</p>
                 <p class="about-text">I love learning new and better ways to create seamless user experiences with
-                  clean, efficient, and scalable code. I aspire toward a career that will allow me to channel my
-                  creativity through crafting beautiful software and engaging experiences.. At the end of the day, my
-                  primary goal is to create something beautiful with people that bring out the best in me.</p>
+                  clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for
+                  opportunities to work with those who are willing to share their knowledge as much as I want to learn.
+                  At the end of the day, my primary goal is to create something beautiful with people that bring out the
+                  best in me.</p>
                 <p class="about-text"><strong>When I'm not in front of a computer screen,</strong> I'm probably
-                  treking❄⛄ to unknown places and petting dogs🐶.</p>
+                  snowboarding, traveling, petting dogs, or learning a new song on my uke.</p>
               </div>
             </div>
           </div>
@@ -215,7 +211,58 @@
       </section>
     </section>
     <section id="services">
+      <section id="services-section" class="section gap">
+        <div class="bg" data-anchor-target="#services-section"
+          data-bottom-top="transform: translate3d(0px, -150px, 0px);"
+          data-top-bottom="transform: translate3d(0px, 150px, 0px);"></div>
+        <div class="overlay-wrapper">
+          <div class="fade-in">
+            <h1 class="section-heading">What I Do</h1>
+            <span class="divider"></span>
+            <div class="services-wrapper">
+              <div class="service-row">
+                <div class="row">
+                  <div class="service-row">
+                    <div class="service-column">
+                      <div class="sprite webdev"></div>
+                      <h2 class="service-heading">WEB DEVELOPMENT</h2>
+                      <p>Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, I
+                        have a passion for developing pixel-perfect websites and apps while maintaining a semantic,
+                        modular, and DRY code base.</p>
+                    </div>
+                    <div class="service-column">
+                      <div class="sprite ui"></div>
+                      <h2 class="service-heading">RESPONSIVE UI DESIGN</h2>
+                      <p class="service-text"><span class="custom-bold-italics">"A user interface is like a joke. If you
+                          have to explain it, it's not that good."</span> I strive to develop and implement responsive
+                        and aesthetically pleasing interfaces for websites and apps that adapt to any type of device,
+                        platform, or browser.</p>
+                    </div>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-column">
+                      <div class="sprite xd"></div>
+                      <h2 class="service-heading">Experience Design</h2>
+                      <p class="service-text">There have been far too many times where I've been trying to accomplish a
+                        simple task on a website, and ended up wanting to throw my computer out the window in
+                        frustration. Needless to say, user experience is an aspect of software I believe is vital to a
+                        successful product.</p>
+                    </div>
+                    <div class="service-column">
+                      <div class="sprite wit"></div>
+                      <h2 class="service-heading">Diversity in Tech</h2>
+                      <p class="service-text">Beyond coding, I am a strong advocate for diversity in the tech industry,
+                        especially for women. I currently serve as President for Northeastern's women in tech club, <a
+                          href="http://nuwit.ccs.neu.edu/" target="_blank">NUWIT</a>, and was a 2016 <a
+                          href="http://ghc.anitaborg.org/" target="_blank">Grace Hopper Conference</a> Scholar.</p>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
+            </div>
+          </div>
+      </section>
     </section>
     <section id="skills-section" class="section">
       <div class="section-wrapper">
@@ -228,16 +275,27 @@
                 <li class="dev-item javaScript"></li>
                 <li class="dev-item html"></li>
                 <li class="dev-item css"></li>
-                <li class="dev-item linux"></li>
-                <li class="dev-item jira"></li>
-                <li class="dev-item python"></li>
-                <li class="dev-item react"></li>
-                <li class="dev-item nodejs"></li>
-                <li class="dev-item mongoldb"></li>
-
+                <li class="dev-item jekyll">Jekyll</li>
+                <li class="dev-item python">Python</li>
+                <li class="dev-item react">React</li>
+                <li class="dev-item backbon">Backbone</li>
+                <li class="dev-item nodejs">Node.js</li>
+                <li class="dev-item angular">Angular</li>
               </ul>
             </div>
-
+            <div class="flex-item design-wrapper">
+              <h2 class="skills-heading"> <span class="sprite design"></span> <span>Design</span> </h2>
+              <ul>
+                <li class="design-item"><img class="item-img" src="img/icons/sketch.png" alt="sketch"></li>
+                <li class="design-item"><img class="item-img" src="img/icons/adobe-photoshop.png" alt="adobe-photoshop">
+                </li>
+                <li class="design-item"><img class="item-img" src="img/icons/adobe-indesign.png" alt="adobe-indesign">
+                </li>
+                <li class="design-item"><img class="item-img" src="img/icons/adobe-illustrator.png"
+                    alt="adobe-illustrator"></li>
+                <li class="design-item"><img class="item-img" src="img/icons/invision.png" alt="invision"></li>
+              </ul>
+            </div>
             <div class="flex-item check-wrapper">
               <div class="tools-wrapper">
                 <h2 class="skills-heading"> <span class="sprite tools"></span> <span>Tools</span> </h2>
@@ -271,7 +329,6 @@
         </div>
       </div>
     </section>
-
     <section id="experience-section" class="section gap">
       <div class="bg skrollable skrollable-between" data-anchor-target="#experience-section"
         data-bottom-top="transform: translate3d(0px, -150px, 0px);"
@@ -281,97 +338,112 @@
         <div class="fade-in">
           <div class="center">
             <h1 class="section-heading">Experience</h1> <span class="divider center"></span>
+            <p class="experience-description">Thanks to Northeastern's co-op program, I've had the privilege of
+              completing two awesome six-month co-ops as a Creative Technologist at <a href="http://us.mullenlowe.com/"
+                target="_blank">MullenLowe U.S.</a> and Software Engineer at <a href="https://starry.com/"
+                target="_blank">Starry</a>. Starting in July 2017, I'll be joining the iTunes team at <a
+                href="https://apple.com/" target="_blank">Apple</a> as a UI Engineer for my third and final co-op!</p>
           </div>
           <div class="experience-wrapper">
             <div id="timeline">
               <div class="timeline-block">
                 <div class="timeline-content">
-                  <h2 class="position">PSG College</h2>
-                  <h3 class="company"><a href="https://www.psgtech.org/" target="_blank">PSG College of Technology</a>
-                  </h3>
-                  <p class="job-desc">Candidate for Bachelor of Engineering in Computer Science. Learned Embedded
-                    systems and started working on web Development Projects.</strong></p>
+                  <h2 class="position">Northeastern University</h2>
+                  <h3 class="company"><a href="http://www.ccis.northeastern.edu/program/information-science-bs/"
+                      target="_blank">NU College of Computer &amp; Information Science</a></h3>
+                  <p class="job-desc">Candidate for Bachelor of Science in Information Science with a concentration in
+                    Human Computer Interaction (HCI) and a minor in Interaction Design. <strong>Graduating in May
+                      2018.</strong></p>
                 </div>
                 <div class="timeline-img">
                   <div class="sprite university"></div>
-                </div> <span class="date">2013 - 2016</span>
+                </div> <span class="date">2013 - Present</span>
               </div>
               <div class="timeline-block">
                 <div class="timeline-content">
-                  <h2 class="position">Co-founder & Developer</h2>
-                  <h3 class="company"><a href="#">Myhomecart Technologies Pvt. Ltd.</a></h3>
-                  <p class="job-desc">Built the ecommerce platform. Recruited to managing a team of analysts delivering
-                    actionable insights to optimize the site experience and conversion. Provided strategic direction to
-                    reduce product development cost by >10%. Worked closely with seller community to understand their
-                    needs, educate them of customer experience goals. Managed budgeting and finance operations in the
-                    first year of my career. After a year, I moved to product management with the responsibility of
-                    managing the Logistics. I managed the logistics till it's merger in March 2018.</p>
+                  <h2 class="position">HCI Research Assistant</h2>
+                  <h3 class="company"><a href="http://www.ccis.northeastern.edu/" target="_blank">NU College of Computer
+                      &amp; Information Science</a></h3>
+                  <p class="job-desc">Assisted a computer science PhD student in the development of a software prototype
+                    built with HTML, CSS, JavaScript, and jQuery to facilitate better understanding of parent-child
+                    communication preferences in low-SES (Socio-Economic Status) families. Developed remotely to meet
+                    weekly deadlines and project checkpoints.</p>
                 </div>
                 <div class="timeline-img">
-                  <div class="sprite industry"></div>
-                </div> <span class="date">Aug 2016 - Mar 2018</span>
+                  <div class="sprite research"></div>
+                </div> <span class="date">Mar - May 2015</span>
               </div>
               <div class="timeline-block">
                 <div class="timeline-content">
-                  <h2 class="position">Software Engineer & Associate Data Scientist</h2>
-                  <h3 class="company"><a href="http://lawtendo.com/" target="_blank">Lawtendo</a></h3>
-                  <p class="job-desc">Extracting and analyzing data from large data sets (structured/ unstructured).
-                    Designing and developing performance tuning reports. Facilitating client requirements conversations
-                    and capturing business requirements..</p>
+                  <h2 class="position">Creative Technologist Co-op</h2>
+                  <h3 class="company"><a href="http://us.mullenlowe.com/" target="_blank">MullenLowe U.S.</a></h3>
+                  <p class="job-desc">Developed and maintained code for in-house and client websites. Tested front-end
+                    code in various browsers and mobile devices to ensure cross-browser compatibility and
+                    responsiveness. Collaborated closely with other developers and digital producers to meet deadlines
+                    for clients including Lovesac, U.S. Cellular, JetBlue, and more.</p>
                 </div>
                 <div class="timeline-img">
                   <div class="sprite industry"></div>
-                </div> <span class="date">Mar 2018 - May 2020</span>
+                </div> <span class="date">July - Dec 2015</span>
               </div>
               <div class="timeline-block">
                 <div class="timeline-content">
-                  <h2 class="position">Freelance</h2>
-                  <h3 class="company"><a href="https://www.tercept.com/" target="_blank">Tercept</a></h3>
-                  <p class="job-desc"> I Provided SW specifications and production quality code on time to meet project
-                    mile stones. Provide SW specifications, production quality code, and engage with algorithm
-                    proliferation activities. Developed the next generation of automation tools for monitoring and
-                    measuring Ad Quality, with associated user interfaces.</p>
+                  <h2 class="position">HCI Teaching Assistant</h2>
+                  <h3 class="company"><a href="http://www.ccis.northeastern.edu/" target="_blank">NU College of Computer
+                      &amp; Information Science</a></h3>
+                  <p class="job-desc">Assisted professor with grading homework and project assignments. Held office
+                    hours to aid students in their understanding of core HCI concepts and reported to the professor the
+                    extent of their understanding.</p>
                 </div>
                 <div class="timeline-img">
-                  <div class="sprite industry"></div>
-                </div> <span class="date">Aug 2018 - May 2019</span>
+                  <div class="sprite academic"></div>
+                </div> <span class="date">Jan - May 2016</span>
               </div>
               <div class="timeline-block">
                 <div class="timeline-content">
-                  <h2 class="position">Software Engineer</h2>
-                  <h3 class="company"><a href="#">data245</a></h3>
-                  <p class="job-desc"> I Consistently created well designed, tested code using best practices for
-                    website development, including mobile and responsive site design. Developed webapps and user
-                    interfaces, using standard HTML/CSS practices, while incorporating data from backend databases and
-                    services. Created and maintain workflows with teams to provide visibility and to ensure workload
-                    balance for consistent visual designs. Developed or validated testing schedules, addressing all
-                    browsers and devices to ensure various computers can access content. Maintain updated knowledge of
-                    new and emerging industry trends and technology.</p>
+                  <h2 class="position">President</h2>
+                  <h3 class="company"><a href="http://nuwit.ccs.neu.edu" target="_blank">NU Women in Tech</a></h3>
+                  <p class="job-desc">Lead weekly club meetings to foster a community of diverse women in CS. Manage a
+                    variety of academic and social activities throughout the semester, including tech talks, student
+                    panels, and workshops. Communicate regularly with e-board and administrative organizations.</p>
                 </div>
                 <div class="timeline-img">
-                  <div class="sprite industry"></div>
-                </div> <span class="date">Dec 2019 - Mar 2020</span>
+                  <div class="sprite university"></div>
+                </div> <span class="date">May 2016 - Present</span>
               </div>
               <div class="timeline-block">
                 <div class="timeline-content">
-                  <h2 class="position">Cognitive Developer</h2>
-                  <h3 class="company"><a href="https://leena.ai/" target="_blank">LeenaAI</a></h3>
-                  <p class="job-desc">I Build & Design conversational chatbots that can be directly deployed for usage
-                    by a large volume of customers. Prepared Chatbots user flows, process flows and site maps to
-                    effectively communicate interaction and design ideas. I also Collaborate with the senior team
-                    (System Architect and Senior Programmer) on chatbot architecture design and decision making &
-                    Analyze data coming from bot conversation.</p>
+                  <h2 class="position">Software Engineer Co-op</h2>
+                  <h3 class="company"><a href="https://starry.com/" target="_blank">Starry</a></h3>
+                  <p class="job-desc">Engineered and maintained major features of Starry's customer-facing web app using
+                    ES6, Handlebars, Backbone, Marionette, and CSS. Proposed and implemented scalable solutions to
+                    issues identified with cloud services and applications responsible for communicating with Starry
+                    Station. Worked closely with designers and other developers to ensure thoughtful and coherent user
+                    experiences across Starry’s mobile apps.</p>
                 </div>
                 <div class="timeline-img">
                   <div class="sprite industry"></div>
-                </div> <span class="date">July 2020- Present</span>
+                </div> <span class="date">July - Dec 2016</span>
+              </div>
+              <div class="timeline-block">
+                <div class="timeline-content">
+                  <h2 class="position">Developer</h2>
+                  <h3 class="company"><a href="http://www.northeastern.edu/scout/" target="_blank">Scout Studio</a></h3>
+                  <p class="job-desc">Collaborated with a small team of student designers to spearhead a new design
+                    system for Scout’s first annual student-led design conference at Northeastern. Worked closely with
+                    designers and management team to develop, document, and manage the conference’s marketing website
+                    using Jekyll, Sass, and JavaScript.</p>
+                </div>
+                <div class="timeline-img">
+                  <div class="sprite university"></div>
+                </div> <span class="date">Jan 2017 - Present</span>
               </div>
             </div> <i class="down-arrow"></i>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- 5744 -->
     <a class="block-btn" href="http://arunabho.com/resume.pdf" target="_blank"> <span class="text">View my full
         résumé</span> <img class="icon" src="img/icons/download.png" alt="download resume"> </a>
     <section id="portfolio-section" class="section" style="background-color: black;">
@@ -386,23 +458,60 @@
                   alt="mobile-screenshot"> </div>
               <div class="description-title-container">
                 <h2 class="description-title">data245</h2>
+                <!-- <div class="description-buttons"> <a href="https://github.com/crowddj/crowddj-react"
+                    target="_blank">Demo</a> <a href="https://github.com/crowddj/crowddj-react" target="_blank">Code</a>
+                </div> -->
               </div>
-              <p class="portfolio-description">data245 has left its mark by providing an unparalleled industry service.
-                I worked hard to ensure our clients in all fields receive the best employee benefits services that, in
-                turn, save them up to 20% of their overall benefits spend.
-
-                data245 keeps their algorithms and machines refined and on point by servicing a broad range of large
-                national companies. By collecting data from throughout the country, our methods, algorithms, and data
-                maintain their faculty and allow for optimal results for every client.</p>
+              <p class="portfolio-description">Crowd DJ is a web app that allows people who are at a party or social
+                gathering with a DJ (who uses Spotify) to request songs via their smartphones. The web app allows people
+                to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the
+                crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music
+                queue.</p>
               <div class="used">
                 <ul class="used-items">
                   <li class="used-item">React.js</li>
                   <li class="used-item">Sass</li>
                   <li class="used-item">Firebase</li>
-
+                  <li class="used-item">Spotify API</li>
                 </ul>
               </div>
             </div> <span class="divider"></span>
+            <!-- <div class="portfolio-row">
+              <div class="screenshots screentime"> <img class="img-screentime"
+                  src="img/portfolio/screentime/screentime-1.jpg" alt="screentime-1"> <img class="img-screentime"
+                  src="img/portfolio/screentime/screentime-2.jpg" alt="screentime-2"> <img class="img-screentime"
+                  src="img/portfolio/screentime/screentime-3.jpg" alt="screentime-3"> <img class="img-screentime"
+                  src="img/portfolio/screentime/screentime-4.jpg" alt="screentime-4"> </div>
+              <div class="description-title-container">
+                <h2 class="description-title">Screentime 2.0</h2>
+                <div class="description-buttons"> <a
+                    href="https://play.google.com/store/apps/details?id=com.starry.management" target="_blank">Demo</a>
+                </div>
+              </div>
+              <p class="portfolio-description">ScreenTime 2.0 was one of <a href="https://starry.com/"
+                  target="_blank">Starry</a>'s most important consumer-facing software updates on <a
+                  href="https://starry.com/station" target="_blank">Starry Station</a>, providing new functionality for
+                users to easily filter content, pause the internet, and even create custom rules for blocking apps like
+                Facebook and Twitter right from their mobile phones. As a co-op, I played a large role in the
+                implementation of this feature on Starry's cordova android app, and was responsible for building out
+                front-end designs, linking up back-end data, as well as communicating with designers and other engineers
+                throughout the process. <br><br> Check out the Starry App on <a
+                  href="https://play.google.com/store/apps/details?id=com.starry.management" target="_blank">Google
+                  Play</a>, and learn more about ScreenTime 2.0 on <a
+                  href="https://www.producthunt.com/tech/screentime-for-starry-station" target="_blank">Product Hunt</a>
+                and the <a href="https://blog.starry.com/whats-new-screentime-just-got-better-for-parents/"
+                  target="_blank">Starry Blog</a>.</p>
+              <div class="used">
+                <ul class="used-items">
+                  <li class="used-item">JavaScript</li>
+                  <li class="used-item">CSS</li>
+                  <li class="used-item">Handlebars.js</li>
+                  <li class="used-item">Backbone.js</li>
+                  <li class="used-item">Marionette.js</li>
+                  <li class="used-item">Cordova</li>
+                </ul>
+              </div>
+            </div> <span class="divider"></span> -->
             <div class="portfolio-row">
               <div class="screenshots "> <img class="img-lg" src="img/work-images/react-resume/resume.png"
                   alt="desktop-screenshot"> <img class="img-md" src="img/work-images/react-resume/resume-tablet.png"
@@ -410,12 +519,11 @@
                   alt="mobile-screenshot"> </div>
               <div class="description-title-container">
                 <h2 class="description-title">Online React Resume</h2>
-                <div class="description-buttons"> <a href="http://arunabho.com/react-resume/" target="_blank">Demo</a>
-                  <a href="https://github.com/iarunabho/react-resume/" target="_blank">Code</a> </div>
+                <div class="description-buttons"> <a href="http://arunabho.com/react-resume/"
+                    target="_blank">Demo</a> <a href="https://github.com/iarunabho/react-resume/"
+                    target="_blank">Code</a> </div>
               </div>
-              <p class="portfolio-description">I was browsing the web for learning react & then I found the github
-                account of Brittany where she made this react-resume. I followed what she did. I could learn a lot about
-                react from that. </p>
+              <p class="portfolio-description">I was browsing the web for learning react & then I found the github account of Brittany where she made this react-resume. I followed what she did. I could learn a lot about react from that. </p>
               <div class="used">
                 <ul class="used-items">
                   <li class="used-item">JavaScript</li>
@@ -434,8 +542,9 @@
                 <div class="description-buttons"> <a href="http://arunabho.com/v1" target="_blank">Demo</a> <a
                     href="https://github.com/iarunabho/v1/" target="_blank">Code</a> </div>
               </div>
-              <p class="portfolio-description">This is my first portfolio website and it shows my few projects that I
-                worked on and experiences working in an industry.</p>
+              <p class="portfolio-description">This was my first portfolio website I built in 2014. It's a simple
+                one-pager like this one, but relied heavily on Bootstrap. Since then, I think my web development and
+                design skills have expanded immensely.</p>
               <div class="used">
                 <ul class="used-items">
                   <li class="used-item">HTML</li>
@@ -454,10 +563,10 @@
               <div class="description-title-container">
                 <h2 class="description-title">DataSolce</h2>
               </div>
-              <p class="portfolio-description">DataSocle is a smart data scraping service that allows you to scour the
-                web for unstructured data and build sensible and structured information from it. Data Socle’s data
-                acquisition,exploration and warehousing modules can give you an unparalleled advantage over your
-                competitors.</p>
+              <p class="portfolio-description">CourseSource is a web application built on the MEAN (MongoDB, Express,
+                Angular, Node) stack for my web development class in 2015. I created this web app with the intention of
+                providing Northeastern Students a better experience browsing the courses offered at Northeastern (which
+                is currently a painstakingly tedious task on our current student portal).</p>
               <div class="used">
                 <ul class="used-items">
                   <li class="used-item">HTML</li>
@@ -472,23 +581,19 @@
                 </ul>
               </div>
             </div> <span class="divider"></span>
-
-
+           
+            
             <div class="portfolio-row">
-              <div class="screenshots "> <img class="img-lg"
-                  src="img/work-images/creatingcommotion/creatingcommotion.png" alt="desktop-screenshot"> <img
-                  class="img-md" src="img/work-images/creatingcommotion/creatingcommotion-tablet.png"
-                  alt="tablet-screenshot"> <img class="img-sm"
-                  src="img/work-images/creatingcommotion/creatingcommotion-mobile.png" alt="mobile-screenshot"> </div>
+              <div class="screenshots "> <img class="img-lg" src="img/work-images/creatingcommotion/creatingcommotion.png"
+                  alt="desktop-screenshot"> <img class="img-md" src="img/work-images/creatingcommotion/creatingcommotion-tablet.png"
+                  alt="tablet-screenshot"> <img class="img-sm" src="img/work-images/creatingcommotion/creatingcommotion-mobile.png"
+                  alt="mobile-screenshot"> </div>
               <div class="description-title-container">
                 <h2 class="description-title">CreatingCommotion</h2>
                 <div class="description-buttons"> <a href="https://www.creatingcommotion.com/"
                     target="_blank">Commotion</a> </div>
               </div>
-              <p class="portfolio-description">ComMotion Marketing understands that your life and your aspirations are
-                as big, bold and colorful as the company you keep, the love you give, the dreams you work to fulfill and
-                the family you cherish. There is value in your voice and we’ve got the megaphone! You are NOT a box to
-                check or a type to define. Learn more about this
+              <p class="portfolio-description">ComMotion Marketing understands that your life and your aspirations are as big, bold and colorful as the company you keep, the love you give, the dreams you work to fulfill and the family you cherish. There is value in your voice and we’ve got the megaphone! You are NOT a box to check or a type to define. Learn more about this
                 project <a href="https://www.creatingcommotion.com/" target="_blank">here</a>!</p>
               <div class="used">
                 <ul class="used-items">
@@ -504,8 +609,7 @@
         </div>
       </div>
     </section>
-    <a class="block-btn" href="https://github.com/iarunabho" target="_blank"> <span class="text">See more
-        projects</span>
+    <a class="block-btn" href="https://github.com/iarunabho" target="_blank"> <span class="text">See more projects</span>
       <img class="icon" src="img/icons/github.svg" alt="github"> </a>
     <section id="contact-section" class="section gap">
       <div class="bg skrollable skrollable-between" data-anchor-target="#contact-section"
@@ -516,12 +620,12 @@
         <div class="fade-in">
           <div class="center">
             <h1 class="section-heading">Get In Touch</h1> <span class="divider center"></span>
-            <p class="contact-description">What are you thinking? Do you want to launch a rocket🚀🤣 or just want to say
-              hi? Feel free to send me a message!</p>
+            <p class="contact-description">What are you thinking? Do you want to launch a rocket🚀🤣 or  just want to say hi? Feel free to send me a message!</p>
           </div>
           <div class="contact-wrapper">
             <form id="contactform" class="form-wrapper" method="POST" autocomplete="off"
-              action="https://formspree.io/f/myybavpz"> <input type="text" name="_gotcha" style="display:none">
+              action="https://formspree.io/f/myybavpz"> <input type="text" name="_gotcha"
+                style="display:none">
               <div class="input-wrapper"> <label for="name" class="input-label">Name</label> <input type="text"
                   name="name" class="contact-input" id="name" required=""> </div>
               <div class="input-wrapper"> <label for="email" class="input-label">Email</label> <input type="email"
@@ -569,6 +673,22 @@
     const contactform = document.getElementById('contactform');
     contactform.setAttribute('action', 'https:' + '//formspree.io/' + 'brittany.chiang' + '@' + 'gmail' + '.' + 'com');
   </script> -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45666519-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 
 </html>
