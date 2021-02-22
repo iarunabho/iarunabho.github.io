@@ -243,25 +243,25 @@ ul {
 
 @media only screen and (max-width:1170px) {
     #intro-section .bg {
-        background-image: url(../img/bg-intro/intro-lg.jpg)
+        background-image: url(../img/bg-intro/intro-bg.jfif)
     }
 }
 
 @media only screen and (max-width:900px) {
     #intro-section .bg {
-        background-image: url(../img/bg-intro/intro-md.jpg)
+        background-image: url(../img/bg-intro/intro-bg.jfif)
     }
 }
 
 @media only screen and (max-width:660px) {
     #intro-section .bg {
-        background-image: url(../img/bg-intro/intro-sm.jpg)
+        background-image: url(../img/bg-intro/intro-bg.jfif)
     }
 }
 
 @media only screen and (max-width:480px) {
     #intro-section .bg {
-        background-image: url(../img/bg-intro/intro-xs.jpg)
+        background-image: url(../img/bg-intro/intro-bg.jfif)
     }
 }
 
