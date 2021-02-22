@@ -495,7 +495,7 @@ ul {
 
 .overlay {
     position: fixed;
-    background: rgba(0, 183, 199, .95);
+    background: #0054c7;
     top: 0;
     left: 0;
     width: 100%;
