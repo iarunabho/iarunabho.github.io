@@ -920,8 +920,8 @@ ul {
 }
 
 #intro-section .intro-wrapper .intro-body .scroll-down-wrapper .scroll-down .logo {
-    padding-left: 13px;
-    width: 81px;
+    /* padding-left: 13px; */
+    width: 50px;
     transition: opacity .5s ease, visibility .5s
 }
 
